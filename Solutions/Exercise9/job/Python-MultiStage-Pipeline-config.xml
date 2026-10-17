@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<!--
+  Exercise 9 - Pipeline job "Python-MultiStage-Pipeline".
+
+  This is the exact configuration the brief describes through the UI (Steps 4
+  and 6), expressed as the config.xml Jenkins stores on disk:
+    * General        -> <description>...</description>
+    * Pipeline
+      Definition     -> "Pipeline script from SCM"
+                         SCM: Git, repo URL, branch */main
+                         Script Path: Jenkinsfile
+  deploy.sh posts this to /createItem (the repo URL is substituted for the
+  detected GitHub owner, so the same file works for any account).
+-->
+<flow-definition>
+  <description>Multi-stage pipeline for a Python Flask app (Build -&gt; Test -&gt; Deploy -&gt; Run -&gt; Test Application).</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition">
+    <scm class="hudson.plugins.git.GitSCM">
+      <configVersion>2</configVersion>
+      <userRemoteConfigs>
+        <hudson.plugins.git.UserRemoteConfig>
+          <url>https://github.com/shreyassridhar44/devops-sample-code.git</url>
+        </hudson.plugins.git.UserRemoteConfig>
+      </userRemoteConfigs>
+      <branches>
+        <hudson.plugins.git.BranchSpec>
+          <name>*/main</name>
+        </hudson.plugins.git.BranchSpec>
+      </branches>
+      <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+      <submoduleCfg class="empty-list"/>
+      <extensions/>
+    </scm>
+    <scriptPath>Jenkinsfile</scriptPath>
+    <lightweight>true</lightweight>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

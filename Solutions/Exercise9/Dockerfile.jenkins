@@ -1,0 +1,25 @@
+# Jenkins image for Exercise 9.
+#
+# The stock jenkins/jenkins:lts image ships NO plugins and NO Python. This
+# pipeline needs three things the brief's Step 8 normally has you install by
+# hand via `docker exec` + `apt`:
+#   * the `git` plugin            - check Jenkinsfile + app out of SCM
+#   * the Pipeline plugins        - a declarative pipeline job won't even load
+#                                   without them (workflow-aggregator pulls in
+#                                   workflow-job, workflow-cps, stage steps, ...)
+#   * python3 + flask             - the Test / Run / Test Application stages
+#                                   import flask, and `python3` must exist
+# Baking all of it into the image automates Step 8 and keeps runs repeatable.
+FROM jenkins/jenkins:lts
+
+USER root
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+      python3 \
+      python3-pip \
+      python3-venv \
+      python3-flask \
+ && rm -rf /var/lib/apt/lists/*
+
+USER jenkins
+RUN jenkins-plugin-cli --plugins git workflow-aggregator
