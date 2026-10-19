@@ -1,5 +1,7 @@
 # Exercise 6 — Real-Time Operations Monitoring with Prometheus, Grafana & Jenkins
 
+> Brief: [`Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App.md`](../../Exercises/6-Grafana-Realtime-Monitoring-of-Quick-Commerce-App.md)
+
 **Goal:** Build the ZAPPTTO delivery-monitoring stack — a Python app that
 simulates delivery metrics, **Prometheus** scraping it with alert rules,
 **Grafana** showing the four KPI panels, and a **Jenkins pipeline** that builds/

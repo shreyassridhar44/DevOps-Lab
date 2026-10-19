@@ -1,5 +1,7 @@
 # Exercise 7 — Introduction to CI & Jenkins Installation
 
+> Brief: [`Exercises/7-Jenkins-CI-Automation.md`](../../Exercises/7-Jenkins-CI-Automation.md)
+
 **Goal:** install a **Jenkins LTS** controller with Docker, unlock it with the
 initial administrator password, and reach the Jenkins dashboard — the practical
 counterpart to the brief's theory on Continuous Integration and CI tools.

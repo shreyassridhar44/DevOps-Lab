@@ -1,5 +1,7 @@
 # Exercise 2 — Deploy a Flask App on Minikube using kubectl and YAML
 
+> Brief: [`Exercises/2-Minikube-Kubectl-Flask.md`](../../Exercises/2-Minikube-Kubectl-Flask.md)
+
 **Goal:** Run a Python Flask application on the Minikube cluster — build the
 image **inside Minikube's Docker daemon**, deploy it with a Deployment + Service
 YAML, and access it from your machine.

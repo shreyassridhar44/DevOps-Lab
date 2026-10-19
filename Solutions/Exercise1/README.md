@@ -1,5 +1,7 @@
 # Exercise 1 — Kubernetes Getting Started: "Hello Pod"
 
+> Brief: [`Exercises/1-Kubernetes-Getting-Started.md`](../../Exercises/1-Kubernetes-Getting-Started.md)
+
 **Goal:** Deploy your first application on Kubernetes — the **Zepto storefront /
 delivery-status page**, simulated with the `nginx` image — and access it from
 your browser.

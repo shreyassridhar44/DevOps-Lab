@@ -1,5 +1,7 @@
 # Exercise 5 — Docker Security with AppArmor and Python
 
+> Brief: [`Exercises/5-Docker-Security-AppArmor.md`](../../Exercises/5-Docker-Security-AppArmor.md)
+
 **Goal:** Secure a containerized Flask app with an **AppArmor profile** — deny
 reads of `/etc/**`, deny writes to `/var/**`, deny binary execution under
 `/bin` and `/usr/bin` — then apply it with the **Docker SDK for Python** and

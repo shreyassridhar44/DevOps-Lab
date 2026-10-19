@@ -1,5 +1,7 @@
 # Exercise 3 — Scaling a Flask App on a Single Node using ReplicaSets
 
+> Brief: [`Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets.md`](../../Exercises/3-Minikube-Scaling-Flask-App-with-Replicasets.md)
+
 **Goal:** Run a "flash sale" Flask service as **3 identical pods** behind a
 ReplicaSet, **scale to 5**, watch the Service spread checkout traffic across
 all of them, and prove the ReplicaSet **replaces a deleted pod on its own** —

@@ -36,8 +36,6 @@ DevOps-Lab/
 | 9 | [Exercise9](Exercise9/) | Jenkins multi-stage pipeline — deploying a Python application | [Brief](../Exercises/9-Jenkins-Multi-Stage-Pipeline.md) | ✅ Done |
 | 10 | [Exercise10](Exercise10/) | Multi-node Minikube cluster with multiple apps and ReplicaSets | [Brief](../Exercises/10-Minikube-Multi-Node-Multi-App-Minikube-Deployment.md) | ✅ Done |
 
-*The "Solution" column becomes a link once that exercise has been pushed.*
-
 ## How to Use These Solutions
 
 1. **Pick an exercise** from the table above and open its folder

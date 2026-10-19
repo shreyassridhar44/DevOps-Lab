@@ -1,5 +1,7 @@
 # Exercise 4 — Docker Networking with Multiple Containers
 
+> Brief: [`Exercises/4-Docker-Networking.md`](../../Exercises/4-Docker-Networking.md)
+
 **Goal:** Run a **three-container application** — Flask REST API + MySQL +
 Redis — on a user-defined **bridge network**, and prove that containers find
 each other **by name** while the host reaches the API through a **published

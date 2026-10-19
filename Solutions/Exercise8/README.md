@@ -1,5 +1,7 @@
 # Exercise 8 — Creating a "Hello World" Jenkins Job
 
+> Brief: [`Exercises/8-Jenkins-Hello-World-Job.md`](../../Exercises/8-Jenkins-Hello-World-Job.md)
+
 **Goal:** publish `hello-world.sh` (which prints `Hello, Jenkins!`) to a public
 GitHub repo, then create a **Freestyle** Jenkins job that checks the repo out
 with **Git SCM** and runs `sh hello-world.sh` as a build step — and watch a
