@@ -66,8 +66,4 @@ DevOps-Lab/
 > Some exercises (e.g. AppArmor) require Linux; on Windows, run them inside
 > WSL2 as noted in the exercise README.
 
-## Submission Schedule
 
-Solutions are pushed **every Saturday**, one exercise per week, in order:
-
-`Aug 22 → Aug 29 → Sep 5 → Sep 12 → Sep 19 → Sep 26 → Oct 3 → Oct 10 → Oct 17 → Oct 24` (all 2026).
